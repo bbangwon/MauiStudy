@@ -35,6 +35,16 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button 
+                x:Name="NextBtn"
+                Text="Next"
+                HeightRequest="150"
+                WidthRequest="150"
+                SemanticProperties.Hint ="Move to next page when you click"
+                Clicked="NextBtn_Clicked"
+                HorizontalOptions="Center" />
+
+
         </VerticalStackLayout>
     </ScrollView>
 
