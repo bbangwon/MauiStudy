@@ -9,21 +9,16 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
-
-    private void NextBtn_Clicked(object sender, EventArgs e)
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-		Navigation.PushAsync(new HelloXamlPage());
+		++count;
+
+		var lblSender = sender as Label;
+
+		if(count % 2 == 0) 
+			lblSender.TextColor = Colors.Blue;
+		else
+			lblSender.TextColor = Colors.Red;
     }
 }
 
