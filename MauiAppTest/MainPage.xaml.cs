@@ -7,11 +7,19 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+		lblGesture.Text = "1234";
+        EventButton.Clicked += EventButton_Clicked;
 	}
+
+    private void EventButton_Clicked(object sender, EventArgs e)
+    {
+        lblGesture.Text = $"Event Button Clicked";
+    }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
 		++count;
+		lblGesture.Text = $"{count}";
 
 		var lblSender = sender as Label;
 
