@@ -10,7 +10,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MarkupExtension}"
+        ContentTemplate="{DataTemplate local:SharedResourceDemo}"
         Route="MainPage" />
 
 </Shell>
