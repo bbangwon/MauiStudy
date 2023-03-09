@@ -53,6 +53,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="LayoutOptionsDemo.xaml.cs">
+	    <DependentUpon>LayoutOptionsDemo.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="SharedResourceDemo.xaml.cs">
 	    <DependentUpon>SharedResourceDemo.xaml</DependentUpon>
 	  </Compile>
@@ -60,6 +63,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="HelloXamlPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="LayoutOptionsDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MarkupExtension.xaml">
