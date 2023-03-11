@@ -77,6 +77,9 @@
 	  <MauiXaml Update="StackLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="StaticResourceDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TestPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
