@@ -6,11 +6,37 @@
     xmlns:local="clr-namespace:MauiAppTest"
     xmlns:localCSharpCode ="clr-namespace:MauiAppTest.CSharpCode"
     xmlns:localXamlCode ="clr-namespace:MauiAppTest.XamlCode"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:localFlyoutNavigaiton ="clr-namespace:MauiAppTest.FlyoutNavigation"
+    FlyoutIcon="icon_imageicon_gold01_l.png">
 
-    <ShellContent
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
+            <Image Source="icon_imageicon_gold01_l.png"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Main Page" Icon="icon_imageicon_gold01_l.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="SecondPage" Icon="icon_imageicon_knife_battle.png">
+        <ShellContent            
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:SecondPage}"
+            Route="SecondPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="ThirdPage" Icon="icon_imageicon_levelframe1.png">
+        <ShellContent            
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:ThirdPage}"
+            Route="ThirdPage" />
+    </FlyoutItem>
+
+    <!--<ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:StaticResourceDemo}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
+        Route="MainPage" />-->
 
 </Shell>
