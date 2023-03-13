@@ -6,6 +6,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
+		Routing.RegisterRoute(nameof(StackLayoutDemo), typeof(StackLayoutDemo));
+
 		MainPage = new AppShell();
 	}
 }

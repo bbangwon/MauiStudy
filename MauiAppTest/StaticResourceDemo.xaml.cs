@@ -9,7 +9,7 @@ public partial class StaticResourceDemo : ContentPage
 
     private async void GotoCustom(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(SharedResourceDemo));
+        await Shell.Current.GoToAsync(nameof(StackLayoutDemo));
     }
 
     private void OnLight(object sender, EventArgs e)
