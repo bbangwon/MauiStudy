@@ -15,7 +15,35 @@
         </Grid>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Main Page" Icon="icon_imageicon_gold01_l.png">
+    <FlyoutItem Title="Main Page" FlyoutIcon="icon_imageicon_gold01_l.png">
+        <ShellContent
+            Title="Main"
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
+            Route="MainPage" 
+            Icon="icon_imageicon_gold01_l.png"/>
+        <ShellContent   
+            Title="Second"
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:SecondPage}"
+            Route="SecondPage" 
+            Icon="icon_imageicon_knife_battle.png"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ThirdPage" Icon="icon_imageicon_levelframe1.png">
+        <ShellContent            
+            ContentTemplate="{DataTemplate localFlyoutNavigaiton:ThirdPage}"
+            Route="ThirdPage"/>
+    </FlyoutItem>
+
+    <!--<TabBar>
+        <Tab Title="MainPage" Icon="icon_imageicon_gold01_l.png">
+            <ShellContent ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"/>
+        </Tab>
+        <Tab Title="Second" Icon="icon_imageicon_knife_battle.png">
+            <ShellContent ContentTemplate="{DataTemplate localFlyoutNavigaiton:SecondPage}"/>
+        </Tab>
+    </TabBar>-->
+
+    <!--<FlyoutItem Title="Main Page" Icon="icon_imageicon_gold01_l.png">
         <ShellContent
             Title="Home"
             ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
@@ -28,13 +56,7 @@
             Route="SecondPage" />
     </FlyoutItem>
 
-    <FlyoutItem Title="ThirdPage" Icon="icon_imageicon_levelframe1.png">
-        <ShellContent            
-            ContentTemplate="{DataTemplate localFlyoutNavigaiton:ThirdPage}"
-            Route="ThirdPage" />
-    </FlyoutItem>
-
-    <!--<ShellContent
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
         Route="MainPage" />-->
