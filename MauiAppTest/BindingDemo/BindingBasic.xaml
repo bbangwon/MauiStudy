@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTest.BindingDemo.BindingBasic"
+             Title="BindingBasic">
+    <StackLayout Padding="10,100,0,0" BindingContext="{x:Reference slider}">
+        <Label x:Name="label_0"
+               Text="TEXT"
+               FontSize="48"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Label x:Name="label_1"
+               Text="TEXT"
+               FontSize="48"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Value}"/>
+
+        <Label x:Name="label_2"
+               Text="TEXT"
+               FontSize="48"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Label x:Name="label_3"
+               Text="TEXT"
+               FontSize="48"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Rotation="{Binding Value, Source={x:Reference slider}}"/>
+
+        <Label x:Name="label_4"
+               Text="TEXT"
+               FontSize="48"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Rotation="{Binding Value}"/>
+
+        <BoxView Color="#800000FF"
+                 WidthRequest="180"
+                 HeightRequest="40"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Start"
+                 Rotation="{Binding Value}"/>
+
+        <Slider x:Name="slider"
+                Maximum="360"
+                VerticalOptions="Center"/>
+    </StackLayout>
+</ContentPage>

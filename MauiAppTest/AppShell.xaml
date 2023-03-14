@@ -7,9 +7,10 @@
     xmlns:localCSharpCode ="clr-namespace:MauiAppTest.CSharpCode"
     xmlns:localXamlCode ="clr-namespace:MauiAppTest.XamlCode"
     xmlns:localFlyoutNavigaiton ="clr-namespace:MauiAppTest.FlyoutNavigation"
+    xmlns:localBinding ="clr-namespace:MauiAppTest.BindingDemo"
     FlyoutIcon="icon_imageicon_gold01_l.png">
 
-    <Shell.FlyoutHeader>
+    <!--<Shell.FlyoutHeader>
         <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
             <Image Source="icon_imageicon_gold01_l.png"/>
         </Grid>
@@ -32,7 +33,7 @@
         <ShellContent            
             ContentTemplate="{DataTemplate localFlyoutNavigaiton:ThirdPage}"
             Route="ThirdPage"/>
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <!--<TabBar>
         <Tab Title="MainPage" Icon="icon_imageicon_gold01_l.png">
@@ -54,11 +55,11 @@
         <ShellContent            
             ContentTemplate="{DataTemplate localFlyoutNavigaiton:SecondPage}"
             Route="SecondPage" />
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate localFlyoutNavigaiton:MainPage}"
-        Route="MainPage" />-->
+        ContentTemplate="{DataTemplate localBinding:BindingBasic}"
+        Route="MainPage" />
 
 </Shell>
