@@ -59,7 +59,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate localBinding:BindingMode}"
+        ContentTemplate="{DataTemplate localBinding:ConverterDemo}"
         Route="MainPage" />
 
 </Shell>
