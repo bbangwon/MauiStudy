@@ -19,6 +19,15 @@
             <Style x:Key="infoLabelStyle" TargetType="Label" BasedOn="{StaticResource baseLabelStyle}">
                 <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
+            <ControlTemplate x:Key="FooterHeaderControlTemplate">
+                <StackLayout>
+                    <Label Text="{Binding ButtonTitle, Source={RelativeSource TemplatedParent}, 
+                        StringFormat='ButtonTitle Value is {0}'}"/>
+                    <ContentPresenter />
+                    <Label Text="{TemplateBinding ButtonFooter, StringFormat='ButtonFooter value is {0}'}"/>
+                </StackLayout>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
+    
 </Application>

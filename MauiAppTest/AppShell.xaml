@@ -9,6 +9,7 @@
     xmlns:localFlyoutNavigaiton ="clr-namespace:MauiAppTest.FlyoutNavigation"
     xmlns:localBinding ="clr-namespace:MauiAppTest.BindingDemo"
     xmlns:localCommand ="clr-namespace:MauiAppTest.CommandDemo"
+    xmlns:controlTemplate ="clr-namespace:MauiAppTest.ControlTemplateDemo"
     FlyoutIcon="icon_imageicon_gold01_l.png">
 
     <!--<Shell.FlyoutHeader>
@@ -60,7 +61,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate localCommand:DecimalKeyPad}"
+        ContentTemplate="{DataTemplate controlTemplate:MainPage}"
         Route="MainPage" />
 
 </Shell>
