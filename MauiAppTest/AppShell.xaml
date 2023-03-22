@@ -11,6 +11,7 @@
     xmlns:localCommand ="clr-namespace:MauiAppTest.CommandDemo"
     xmlns:controlTemplate ="clr-namespace:MauiAppTest.ControlTemplateDemo"
     xmlns:dataTemplate="clr-namespace:MauiAppTest.DataTemplateDemo"
+    xmlns:trigger="clr-namespace:MauiAppTest.TriggerDemo"
     FlyoutIcon="icon_imageicon_gold01_l.png">
 
     <!--<Shell.FlyoutHeader>
@@ -62,7 +63,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate dataTemplate:DataTemplateSelectorPage}"
+        ContentTemplate="{DataTemplate trigger:TriggerDemo}"
         Route="MainPage" />
 
 </Shell>
