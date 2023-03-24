@@ -66,6 +66,9 @@
 	  <Compile Update="SharedResourceDemo.xaml.cs">
 	    <DependentUpon>SharedResourceDemo.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="TriggerDemo\TriggerDemo2.xaml.cs">
+	    <DependentUpon>TriggerDemo2.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -130,6 +133,18 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TestPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TriggerDemo\CompareStateTriggerDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TriggerDemo\DeviceStateTriggerDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TriggerDemo\StateTriggerDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TriggerDemo\TriggerDemo2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TriggerDemo\TriggerDemo.xaml">

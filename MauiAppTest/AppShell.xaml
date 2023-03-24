@@ -63,7 +63,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate trigger:TriggerDemo}"
+        ContentTemplate="{DataTemplate trigger:DeviceStateTriggerDemo}"
         Route="MainPage" />
 
 </Shell>

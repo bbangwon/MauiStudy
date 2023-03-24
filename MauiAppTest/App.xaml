@@ -27,6 +27,38 @@
                     <Label Text="{TemplateBinding ButtonFooter, StringFormat='ButtonFooter value is {0}'}"/>
                 </StackLayout>
             </ControlTemplate>
+            <Style x:Key="DeviceStateTriggerPageStyle" TargetType="ContentPage">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="iOS">
+                                <VisualState.StateTriggers>
+                                    <DeviceStateTrigger Device="iOS" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Silver"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Android">
+                                <VisualState.StateTriggers>
+                                    <DeviceStateTrigger Device="Android" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Green"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="UWP">
+                                <VisualState.StateTriggers>
+                                    <DeviceStateTrigger Device="UWP"/>
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Aquamarine"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
     
