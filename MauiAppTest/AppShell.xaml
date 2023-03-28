@@ -12,6 +12,7 @@
     xmlns:controlTemplate ="clr-namespace:MauiAppTest.ControlTemplateDemo"
     xmlns:dataTemplate="clr-namespace:MauiAppTest.DataTemplateDemo"
     xmlns:trigger="clr-namespace:MauiAppTest.TriggerDemo"
+    xmlns:behavior="clr-namespace:MauiAppTest.BehaviorDemo"
     FlyoutIcon="icon_imageicon_gold01_l.png">
 
     <!--<Shell.FlyoutHeader>
@@ -63,7 +64,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate trigger:DeviceStateTriggerDemo}"
+        ContentTemplate="{DataTemplate behavior:AttachedNumericValidationPage}"
         Route="MainPage" />
 
 </Shell>

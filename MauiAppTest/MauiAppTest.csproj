@@ -72,6 +72,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="BehaviorDemo\AttachedNumericValidationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="BindingDemo\BindingBasic.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
